@@ -1,4 +1,4 @@
-# Folder documenting my project work for CS50X
+# Projects completed for CS50X's Introduction to Computer Science
 
 ## Problem Sets & Lab 1 :
 - [Hello](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/hello)
