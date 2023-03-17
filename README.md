@@ -1,6 +1,7 @@
 # Here's a folder documenting my project work for CS50X
 
 ## Problem Sets & Lab 1 :
+- [Hello](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/hello)
 - [Mario More](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/mario-more)
 - [Credit](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/credit)
 
@@ -33,6 +34,7 @@
 ## Problem Sets & Lab 7:
 - [Songs](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/songs)
 - [Movies](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/movies)
+- [DNA](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/dna)
 - [FiftyVille](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/fiftyville)
 
 ## Problem Sets & Lab 8:
