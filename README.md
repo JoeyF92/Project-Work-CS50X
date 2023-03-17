@@ -1,4 +1,4 @@
-# Here's a folder documenting my project work for CS50X
+# Folder documenting my project work for CS50X
 
 ## Problem Sets & Lab 1 :
 - [Hello](https://github.com/JoeyF92/Project-Work-CS50X/tree/main/hello)
