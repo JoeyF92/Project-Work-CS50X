@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/08863cd0b0.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Casablanca</title>
+    </head>
+    <body>
+
+
+        <div id="back"></div>
+        <div id="front">
+            <video autoplay muted loop id="myVideo">
+            <source src="https://res.cloudinary.com/dwxery2ci/video/upload/v1667577026/Cs50%20Homepage/VID_20221104_155417_gnontj.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <div id="content">
+
+                <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark ">
+                <div class="container-fluid">
+                  <a class="navbar-brand nav-text" href="#">My Moroccan Coding Adventure</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="about.html"> About</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                          <li><a class="dropdown-item" href="casablanca.html">Casablanca</a></li>
+                          <li><a class="dropdown-item" href="tangier.html"> Tangier </a></li>
+                          <li><a class="dropdown-item" href="chefchaouen.html"> Chefchaouen </a></li>
+                        </ul>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </nav>
+
+              <section class="flex1">
+
+              <h1> Casablanca </h1>
+
+
+              <nav aria-label="Location Photos" class="carousel">
+                <!-- Next and previous buttons -->
+                <a class="carousel-button prev" onclick="plusSlides(-1)"> <i class="fa-solid fa-chevron-left"></i></a>
+
+                <a class="carousel-button next" onclick="plusSlides(1)"> <i class="fa-solid fa-chevron-right"></i></a>
+                <!-- Slides -->
+                <ul>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023459/Cs50%20Homepage/Casablanca/casa2_ijgzht.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023454/Cs50%20Homepage/Casablanca/casa4_zhkvqr.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023451/Cs50%20Homepage/Casablanca/casa6_weyr6n.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023450/Cs50%20Homepage/Casablanca/444casa_icrf1i.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023435/Cs50%20Homepage/Casablanca/IMG_20221027_092906_ysgxi0.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023421/Cs50%20Homepage/Casablanca/IMG_20221026_102420_bzdwms.jpg" alt="Casablanca Pic">
+                  </li>
+                  <li class="slide trans">
+                    <img src="https://res.cloudinary.com/dwxery2ci/image/upload/v1668023418/Cs50%20Homepage/Casablanca/IMG_20221028_162538_ef3sia.jpg" alt="Casablanca Pic">
+                  </li>
+                 </ul>
+                </nav>
+              </section>
+
+              <section class="text">
+
+                <div>
+                  <p id="p1"> I'm currently based in Casablanca for the next 3 months. Originally I'd come out to study with Le Wagon, but they
+                    decided to cancel the course a week before it commenced..shocker.
+
+                    Anyway, I've decided to carry on self-studying and enjoying being able to do it full-time. I've got my eyes on the next CS50 course which is bit
+                    more indepth with Python and Javascript. Potentially will do some front-end design work around that- -and maybe going in more depth with SQL as i've enjoyed that.
+                </div>
+
+                <div>
+                  <h3> Favourite Parts of Casa: </h3>
+                  <ul>
+                    <li> The Skate park takes number 1 spot </li>
+                    <li> It's not as hassley as other Moroccan cities - the people here are super welcoming</li>
+                    <li> Surfing at Ain Diab</li>
+                    <li> The Cake shop and pancake stall down the road </li>
+                    <li> There's some crazy architecture here - the police station looks like in should be in gotham city</li>
+                    <li> The cats eyes on the roads here sparkle </li>
+                    <li> Souk Jemiaa </li>
+
+                  </ul>
+
+                </div>
+
+
+                <div>
+                  <h3> Least Favourite parts </h3>
+                  <ul>
+                    <li> The constant car horn sounds here - even at like 5am </li>
+                    <li> It's quite ugly here, with not so much to see </li>
+                    <li> Finding vegetarian food</li>
+
+                  </ul>
+                  </div>
+
+
+
+              </section>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  <footer class="footer">
+
+    <div class="name"> <p> Joe Fountain  </p> </div>
+    <div> <a class="contact" href="mailto:jf-9294@protonmail.com"> Contact  </a> </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="script.js" defer></script>
+    </body>
+</html>

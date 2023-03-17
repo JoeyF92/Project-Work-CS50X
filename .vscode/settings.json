@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "credit": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "type_traits": "c"
+    },
+    "gitdoc.enabled": true
+}

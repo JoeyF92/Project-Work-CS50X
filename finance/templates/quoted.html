@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+<p> A share of {{ api_response.name }} ({{ api_response.symbol }}) costs {{ api_response.price | usd }} </p>
+
+
+{% endblock %}

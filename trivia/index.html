@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> Roughly, how many people reside in London? </h3>
+                <p id="answer" > Incorrect </p>
+                <button type="button" onclick="userClick(event)">9 million</button>
+                <button type="button" onclick="userClick(event)">10 million </button>
+                <button type="button" onclick="userClick(event)">8 million </button>
+                <button type="button" onclick="userClick(event)">11 million </button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+
+                <h3> What do you call a group of Stingrays? </h3>
+
+                <input type="text" id="textbox">
+                <button type="button" onclick="part2(event)">Submit</button>
+                <p id="answer2" > Incorrect </p>
+
+            </div>
+        </div>
+
+        <script src="trivia.js"></script>
+    </body>
+</html>

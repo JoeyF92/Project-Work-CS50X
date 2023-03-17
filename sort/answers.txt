@@ -1,0 +1,13 @@
+sort1 uses: Bubble Sort
+Bubble sort has an Ω(n) running time. I eliminated sort2 below, so comparing sor1 and sort3 - if we look at the sorted50000 list, we see the running time for the program is 2.35s for sort3 and 0.509 for sort1
+Therefore sort1 must be bubble sort as it is far quicker to sort an already sorted list than selection sort.
+
+
+sort2 uses: Merge Sort
+
+How do you know?: We can tell this by testing the random5000.txt file on all sort functions. Sort 3 and Sort1 complete with 3.12s and 7.499s respectively, whereas Sort2 only takes 0.776s.
+Merge Sort has an upperbound efficiency of O(n log n), whereas bubble sort and selection sort are O(n2)
+
+sort3 uses: Selection Sort
+
+How do you know?: Process of elimination.

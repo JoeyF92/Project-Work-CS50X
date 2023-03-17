@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<table>
+          <thead>
+              <tr>
+                  <th>Stock Name</th>
+                  <th>Symbol</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Value of Holding</th>
+                </tr>
+          </thead>
+          <tbody>
+            {% for stock in user_stocks %}
+            <tr>
+                <td>{{ stock.name}}</td>
+                <td>{{ stock.stock}}</td>
+                <td> {{ stock.quantity}}</td>
+                <td> {{ stock.price | usd }}</td>
+                <td> {{ stock.value_holding | usd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <p> User cash holding  = {{cash | usd }}</p>
+    <p> Grand total =  {{total_value | usd }} </p>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <h3> Update your password: </h3>
+    <br>
+   <form action="/account_settings" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="current_pass" name="current_pass" placeholder="Current Password" type="password" required>
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="new_pass" name="new_pass" placeholder="New Password" type="password"required>
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Confirm New Password" type="password"required>
+    </div>
+    <button class="btn btn-primary" type="submit"> Update</button>
+</form>
+
+    <h4> Add more funds: </h4>
+    <form action="/add_funds" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="dollars" name="dollars" placeholder="Enter amount in Dollars" type="text"required>
+        </div>
+        <button class="btn btn-primary" type="submit"> Buy </button>
+    </form>
+
+
+{% endblock %}

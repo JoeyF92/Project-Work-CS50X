@@ -1,0 +1,86 @@
+/* This part is so i'm able to create a fade in background effect with the video */
+#front, #back, #content{
+    position: absolute;
+    width: 100vw;
+}
+
+#back{
+     min-height: 100vh;
+     z-index: 1;
+     background-color: white;
+}
+
+#front{
+    z-index: 2;
+}
+
+#content{
+    z-index: 3;
+    width: 100%
+}
+
+/* Background video stuff - the keyframes is for the opacity transition effect*/
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    animation: trees-video 0s;
+    opacity: 0.65;
+  }
+
+  @keyframes trees-video{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+.navbar{
+  opacity: 0.35;
+}
+
+.nav-text{
+  opacity: 1;
+}
+
+
+header{
+  text-align: center;
+
+
+}
+
+ h1{
+    display: inline-block;
+    font-family: 'Exo', sans-serif;
+    width: 80%;
+    color: #ffffff;
+    margin-top: 35vh;
+    opacity: 1;
+    padding: 2vh;
+    border-radius: 50px;
+    text-shadow: 1px 1px 2px grey;
+  }
+
+
+  footer{
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    bottom: 0%;
+    position: fixed;
+    justify-content: space-between;
+    padding-left: 5vw;
+
+  }
+
+  .name, .contact{
+    text-decoration: none;
+    color: white;
+    opacity: 0.3;
+  }
+
+  .name:hover, .contact:hover{
+    opacity: 1;
+    color: white;
+  }

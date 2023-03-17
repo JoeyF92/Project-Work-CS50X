@@ -1,0 +1,456 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -msbox-sizing: border-box;
+}
+
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+img{
+ max-width:100%;
+}
+
+/* This part is so i'm able to create a fade in background effect with the video */
+
+
+#front, #back, #content{
+    position: absolute;
+    width: 100vw;
+}
+
+#back{
+     min-height: 100vh;
+     z-index: 1;
+     background-color: white;
+}
+
+#front{
+    z-index: 2;
+    min-height: 100vh;
+}
+
+#content{
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Background video stuff - the keyframes is for the opacity transition effect*/
+#myVideo {
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    position: fixed;
+    object-fit: cover;
+    animation: trees-video 2s;
+    opacity: 0.15;
+  }
+
+
+
+  @keyframes trees-video{
+    from {opacity: 0;}
+
+  }
+
+
+.navbar{
+  opacity: 0.35;
+  z-index: 3;
+}
+
+.nav-item
+{
+  z-index: 3;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+}
+
+
+
+.nav-text{
+  opacity: 1;
+}
+
+.dropdown{
+  padding-right: 1rem;
+}
+
+
+.flex1{
+  display: flex;
+  height: 20rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+
+}
+
+h1{
+  display: inline;
+  order: 2;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-heading{
+  font-family: 'Exo', sans-serif;
+  color: #ffffff;
+  padding: 2vh;
+  border-radius: 50px;
+  text-shadow: 1px 1px 2px grey;
+  font-size: 1.2rem;
+  animation: trees-video 6s;
+}
+
+
+
+
+
+
+.carousel {
+  height: 15rem;
+  width: 18rem;
+
+  margin:auto;
+  margin-top: 5vh;
+  border-radius: 1.5rem;
+}
+
+
+
+.slide >img{
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.5rem;
+}
+
+
+.carousel-button{
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  top: 50%;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.01);
+  border-radius: .25rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  }
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.carousel-button:focus {
+  outline: 1px solid grey;
+}
+
+.carousel-button.prev{
+  left: 1rem;
+}
+
+.carousel-button.next{
+  right: 1rem;
+}
+
+/* Fading animation */
+.trans {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.text{
+
+  padding-bottom: 3rem;
+
+}
+
+#p1 {
+  padding-top: 0.5rem;
+}
+
+.text
+{
+  width: 90vw;
+  padding-left: 10vw;
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Alegreya', serif;
+}
+
+h3
+{
+  padding-top: 2.5vh;
+}
+
+ul{
+  padding-top: 1.5vh;
+}
+
+li:last-child
+{
+  padding-bottom: 4.5vh;
+}
+
+footer{
+  width: 90vw;
+  display: flex;
+  margin: auto;
+  bottom: 0%;
+  position: fixed;
+  justify-content: space-between;
+  padding-left: 5vw;
+
+}
+
+
+
+.name, .contact{
+  text-decoration: none;
+  color: grey;
+  opacity: 0.3;
+
+}
+
+.name:hover, .contact:hover{
+  opacity: 1;
+  color: grey;
+  cursor: pointer;
+
+}
+
+.home-trans{
+  animation: trees-video 15s;
+}
+
+
+
+@media (min-width: 633px) {
+
+.flex1{
+  flex-direction: row;
+  height: 26rem;
+  width: 35rem;
+  margin: auto;
+
+}
+
+h1{
+  order: 0;
+  padding-left: 1.5rem;
+  font-size: 2rem;
+}
+
+.carousel{
+  width: 22rem;
+  height: 26rem;
+  align-content: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  left: 3rem;
+
+}
+
+.slide img {
+
+  height: 22rem;
+  width: 22rem;
+
+}
+
+.text p
+{
+  font-size: 1rem;
+}
+
+#home-heading{
+  font-size: 1.6rem;
+}
+
+}
+
+
+@media (min-width: 838px) {
+
+  .flex1{
+    height: 30rem;
+    width: 42rem;
+  }
+
+  h1{
+    padding-left: 3rem;
+  }
+
+  .carousel{
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .slide img {
+
+    height: 26rem;
+    width: 26rem;
+  }
+
+  .text p
+{
+  font-size: 1.1rem;
+}
+
+#home-heading{
+  font-size: 1.6rem;
+}
+
+}
+
+
+
+@media (min-width: 838px) {
+
+  .flex1{
+    height: 34rem;
+    width: 42rem;
+  }
+
+  h1{
+    padding-left: 1rem;
+  }
+
+  .carousel{
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .slide img {
+
+    height: 28rem;
+    width: 28rem;
+  }
+
+  #home-heading{
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (min-width: 1108px) {
+
+  .flex1{
+    height: 34rem;
+    width: 90vw;;
+  }
+
+  h1{
+    padding-left: 10rem;
+  }
+
+  .carousel{
+    width: 28rem;
+    height: 28rem;
+    left: 4rem;
+
+
+  }
+
+  .slide img {
+
+    height: 28rem;
+    width: 28rem;
+
+  }
+
+  #home-heading{
+    font-size: 2rem;
+  }
+
+}
+
+
+
+@media (min-width: 1108px) {
+
+  h1{
+    padding-left: 18rem;
+  }
+
+  #home-heading{
+    font-size: 2rem;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 352px) {
+
+.navbar-brand{
+  font-size: 0.75rem;
+}
+
+.navbar-toggler-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav-link{
+  font-size: 0.75rem;
+}
+
+.dropdown-item{
+  font-size: 0.75rem;
+}
+
+
+.flex1{
+  width: 80vw;
+  margin: auto;
+}
+
+.carousel{
+  width: 80vw;
+  padding-left: 6rem;
+}
+
+#home-heading{
+  font-size: 1rem;
+}
+}
